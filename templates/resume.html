@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="resume">
+    <h1>Resume</h1>
+    <!-- Contact Information -->
+    <div class="resume-section">
+        <h2><i class="fas fa-address-card"></i> Contact Information</h2>
+        <p>Varanasi, Uttar Pradesh | +91 9170718677 | <a href="mailto:ms22002200@email.com">ms22002200@email.com</a> | <a href="https://linkedin.com/in/mohammad-saif-4ba114201">LinkedIn</a></p>
+    </div>
+
+    <!-- Objective -->
+    <div class="resume-section">
+        <h2><i class="fas fa-bullseye"></i> Objective</h2>
+        <p>To secure an entry-level position in a software development team where I can apply my foundational programming knowledge and passion for coding to contribute to innovative and efficient software solutions.</p>
+    </div>
+
+    <!-- Education -->
+    <div class="resume-section" onclick="toggleDetails('educationDetails')">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <div id="educationDetails" class="resume-details">
+            <p><strong>Hermann Gmeiner School Intermediate</strong>, Varanasi, Uttar Pradesh<br>
+            Percentage: 84% | Apr 2019 - May 2020 | Subject: Math, Physics, Chemistry</p>
+            <p><strong>Chaudhary Charan Singh University Meerut</strong>, Meerut, Uttar Pradesh<br>
+            B. TECH (Information Technology) | Sep 2020 – May 2024 | CGPA: 7.52</p>
+        </div>
+    </div>
+
+    <!-- Achievements & Awards -->
+    <div class="resume-section" onclick="toggleDetails('achievementsDetails')">
+        <h2><i class="fas fa-trophy"></i> Achievements & Awards</h2>
+        <div id="achievementsDetails" class="resume-details">
+            <ul>
+                <li>Secured a top 5 position in a Web Development competition demonstrating proficiency in web technologies among 1000+ competitors.</li>
+                <li>Achieved 1st place in the SCRIET Hackathon by leading a team to develop a solution that increased website traffic by 50% and reduced page load time by 30%.</li>
+                <li>Solved 150+ questions on LeetCode and GeeksforGeeks enhancing logical skills.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="resume-section" onclick="toggleDetails('workExperienceDetails')">
+        <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+        <div id="workExperienceDetails" class="resume-details">
+            <p><strong>Linux World Intern (Full Stack Python Developer)</strong><br>
+            3rd June 2023 - 18th July 2023</p>
+            <ul>
+                <li>Gained hands-on experience in designing, developing, and deploying 3+ web applications using Python and related technologies.</li>
+                <li>Technologies used: Django, Jinja Templating, SQLAlchemy, HTML, CSS, JS</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certificates -->
+    <div class="resume-section" onclick="toggleDetails('certificatesDetails')">
+        <h2><i class="fas fa-certificate"></i> Certificates</h2>
+        <div id="certificatesDetails" class="resume-details">
+            <ul>
+                <li>Udemy Certified: The Complete Python Bootcamp (06/2022)</li>
+                <li>Quant Master Certified: Quant and Aptitude (12/2023)</li>
+                <li>Udemy Certified: Django Master Course (09/2023)</li>
+            </ul>
+        </div>
+    </div>
+        <a href="https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" class="download-resume">Download Resume</a>
+
+</section>
+
+<script>
+    function toggleDetails(elementId) {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "none" || element.style.display === "") {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    }
+</script>
+
+<style>
+    .resume-section {
+        cursor: pointer;
+       
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+    .resume-section h2 {
+        margin: 0 0 10px;
+    }
+    .resume-details {
+        display: none;
+        margin-top: 10px;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="work-experience">
+    <h1>Work Experience</h1>
+    
+    <!-- Full Stack Python Developer Intern at Linux World -->
+    <article class="job" onclick="toggleDetails('job1Details')">
+        <h2><i class="fas fa-briefcase"></i> Full Stack Python Developer Intern at Linux World</h2>
+        <p><strong>Duration:</strong> June 3, 2023 - July 18, 2023</p>
+        <p><strong>Location:</strong> Remote/On-site</p>
+        <div id="job1Details" class="job-details">
+            <h3>Overview:</h3>
+            <p>During my internship at Linux World, I had the opportunity to gain hands-on experience in designing, developing, and deploying web applications using Python and related technologies. This role allowed me to apply my academic knowledge in real-world scenarios, work collaboratively with a team, and enhance my technical and problem-solving skills.</p>
+            
+            <h3>Key Responsibilities:</h3>
+            <ul>
+                <li>Developed and deployed over 3 web applications using Python frameworks such as Django.</li>
+                <li>Implemented server-side logic using Django, creating RESTful APIs and integrating with SQLAlchemy for database management.</li>
+                <li>Built responsive and interactive user interfaces using HTML, CSS, and JavaScript. Ensured cross-browser compatibility and mobile responsiveness.</li>
+                <li>Designed and managed databases using PostgreSQL and MySQL, ensuring efficient data storage and retrieval.</li>
+                <li>Utilized Jinja templating engine to dynamically generate HTML content, improving user experience.</li>
+                <li>Managed code versions and collaborated with team members using Git and GitHub.</li>
+                <li>Conducted thorough testing of web applications to identify and fix bugs, ensuring high-quality and reliable software.</li>
+            </ul>
+            
+            <h3>Key Projects:</h3>
+            <div class="project">
+                <h4>Online Learning Platform</h4>
+                <p><strong>Description:</strong> Developed a platform for online courses, enabling users to register, enroll in courses, and track their progress.</p>
+                <p><strong>Technologies Used:</strong> Django, PostgreSQL, HTML, CSS, JavaScript, Bootstrap</p>
+                <p><strong>Key Features:</strong> User authentication, course management, progress tracking, responsive design</p>
+            </div>
+            <div class="project">
+                <h4>E-commerce Website</h4>
+                <p><strong>Description:</strong> Built an e-commerce website for a small business, featuring product listings, shopping cart, and checkout functionality.</p>
+                <p><strong>Technologies Used:</strong> Django, MySQL, HTML, CSS, JavaScript, Stripe API for payments</p>
+                <p><strong>Key Features:</strong> Product management, user authentication, payment gateway integration, order tracking</p>
+            </div>
+            <div class="project">
+                <h4>Blog Platform</h4>
+                <p><strong>Description:</strong> Created a blog platform where users can create, edit, and delete posts, as well as comment on posts.</p>
+                <p><strong>Technologies Used:</strong> Django, SQLite, HTML, CSS, JavaScript</p>
+                <p><strong>Key Features:</strong> CRUD operations for posts and comments, user authentication, search functionality</p>
+            </div>
+            
+            <h3>Skills Gained:</h3>
+            <ul>
+                <li>Enhanced my proficiency in Django, HTML, CSS, JavaScript, SQLAlchemy, and database management.</li>
+                <li>Improved my ability to identify and resolve issues quickly and efficiently.</li>
+                <li>Gained experience working in a team environment, utilizing version control systems, and participating in code reviews.</li>
+                <li>Learned to manage project timelines, prioritize tasks, and deliver high-quality work within deadlines.</li>
+            </ul>
+            
+            <h3>Conclusion:</h3>
+            <p>This internship provided me with invaluable experience in full-stack development, allowing me to develop practical skills and gain insight into the software development lifecycle. The projects I worked on not only strengthened my technical abilities but also demonstrated my capability to contribute effectively to a team and deliver functional, user-friendly applications.</p>
+        </div>
+    </article>
+</section>
+{% endblock %}

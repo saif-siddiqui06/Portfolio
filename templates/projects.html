@@ -1,0 +1,112 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="projects">
+    <h1>Projects</h1>
+    
+    <!-- News Headlines Scraper and Dashboard -->
+    <article class="project" onclick="toggleDetails('newsScraperDetails')">
+        <h2><i class="fas fa-newspaper"></i> News Headlines Scraper and Dashboard</h2>
+        <p><strong>Background:</strong> Developed a web application "News Headlines Scraper and Dashboard" to scrape, store, and display the latest BBC News headlines.</p>
+        <div id="newsScraperDetails" class="project-details" style="display: none;">
+            <p><strong>Description:</strong> Key features include periodic task scheduling using Celery, responsive design with Bootstrap, and real-time updates via WebSockets.</p>
+            <p><strong>Challenges:</strong> Handling frequent updates without overloading the server and ensuring data accuracy.</p>
+            <p><strong>Impact:</strong> Enabled users to stay informed with the latest news without manual searches, saving time and effort.</p>
+            <div class="project-media">
+                <iframe src="https://news-scraper-demo-link.com" title="News Headlines Scraper Demo" width="400" height="300"></iframe>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="cta-button">Visit Project</a>
+                    <a href="https://github.com/yourusername/news-headlines-scraper" target="_blank" class="cta-button"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <p><strong>Technology:</strong> Django, Celery, BeautifulSoup, PostgreSQL, HTML, CSS, Bootstrap, Redis, Docker</p>
+        </div>
+    </article>
+
+    <!-- Weather App -->
+    <article class="project" onclick="toggleDetails('weatherAppDetails')">
+        <h2><i class="fas fa-cloud-sun"></i> Weather App</h2>
+       <p><strong>Background:</strong> Developed a web application to provide users with real-time weather information. Implemented features allowing users to make requests for current weather conditions and forecasts for specific locations.</p>
+        <div id="weatherAppDetails" class="project-details" style="display: none;">
+            <p><strong>Description:</strong> Utilized API integration to fetch weather data from OpenWeatherMap and generate responses for user requests.</p>
+            <p><strong>Challenges:</strong> Ensuring accurate and up-to-date data retrieval and handling API rate limits.</p>
+            <p><strong>Impact:</strong> Provided users with reliable and instant weather updates, enhancing their daily planning.</p>
+            <div class="project-media">
+                <iframe src="https://youtu.be/-1-KdnKFhQA" title="Weather App Demo" width="400" height="300"></iframe>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="cta-button">Visit Project</a>
+                    <a href="https://github.com/saif-siddiqui06/Weather-Dual-City" target="_blank" class="cta-button"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <p><strong>Technology:</strong> Django, API requests, JavaScript, HTML, CSS</p>
+        </div>
+    </article>
+
+    <!-- My Recipe Book -->
+    <article class="project" onclick="toggleDetails('recipeBookDetails')">
+        <h2><i class="fas fa-book-open"></i> My Recipe Book</h2>
+        <p><strong>Background:</strong> Developed a web application "My Recipe Book" that allows users to discover, add, modify, share, and explore recipes.</p>
+        <div id="recipeBookDetails" class="project-details" style="display: none;">
+            <p><strong>Description:</strong> Key features include user authentication, intuitive recipe management, and a visually appealing interface with Bootstrap and Font Awesome.</p>
+            <p><strong>Challenges:</strong> Designing a user-friendly interface and implementing secure user authentication.</p>
+            <p><strong>Impact:</strong> Created a community-driven platform for food enthusiasts to share and explore diverse recipes.</p>
+            <div class="project-media">
+                <iframe src="https://my-recipe-book-demo-link.com" title="My Recipe Book Demo" width="400" height="300"></iframe>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="cta-button">Visit Project</a>
+                    <a href="https://github.com/saif-siddiqui06/Recipe-" target="_blank" class="cta-button"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <p><strong>Technology:</strong> Django, HTML, CSS, JavaScript, Font Awesome, Bootstrap</p>
+        </div>
+    </article>
+<!-- Todo Application -->
+<article class="project" onclick="toggleDetails('todoAppDetails')">
+    <h2><i class="fas fa-tasks"></i> Todo Application</h2>
+    <p><strong>Background:</strong> Developed a simple yet effective Todo application to manage tasks efficiently.</p>
+    <div id="todoAppDetails" class="project-details" style="display: none;">
+        <p><strong>Description:</strong> The application allows users to add, update, and delete tasks. It provides a clean and intuitive interface to keep track of daily activities and ensure nothing is missed.</p>
+        <p><strong>Challenges:</strong> Implementing CRUD operations smoothly and ensuring data consistency across the application.</p>
+        <p><strong>Impact:</strong> Enhanced productivity by providing users with a straightforward tool to organize and prioritize their tasks.</p>
+        <div class="project-media">
+            <iframe src="https://todo-app-demo-link.com" title="Todo Application Demo" width="400" height="300"></iframe>
+            <div class="project-links">
+                <a href="#" target="_blank" class="cta-button">Visit Project</a>
+                <a href="#" target="_blank" class="cta-button"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+        <p><strong>Technology:</strong> Django, HTML, CSS, JavaScript</p>
+    </div>
+</article>
+
+    <!-- Chat Application -->
+    <article class="project" onclick="toggleDetails('chatAppDetails')">
+        <h2><i class="fas fa-comments"></i> Chat Application</h2>
+        <p><strong>Background:</strong> Created a real-time chat application that supports multiple chat rooms and private messaging.</p>
+        <div id="chatAppDetails" class="project-details" style="display: none;">
+            <p><strong>Description:</strong> Users can create chat rooms, join existing ones, and send private messages. The app includes features like notifications, message history, and user presence indicators.</p>
+            <p><strong>Challenges:</strong> Ensuring real-time communication without delays and managing concurrent user connections.</p>
+            <p><strong>Impact:</strong> Provided a platform for users to communicate in real-time, enhancing online interaction and collaboration.</p>
+            <div class="project-media">
+                <iframe src="https://chat-app-demo-link.com" title="Chat Application Demo" width="400" height="300"></iframe>
+                <div class="project-links">
+                    <a href="#" target="_blank" class="cta-button">Visit Project</a>
+                    <a href="#" target="_blank" class="cta-button"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <p><strong>Technology:</strong> Socket.io, Django, HTML, CSS, JavaScript</p>
+        </div>
+    </article>
+</section>
+
+<script>
+    function toggleDetails(id) {
+        const element = document.getElementById(id);
+        if (element.style.display === "block" || element.style.display === "") {
+            element.style.display = "none";
+        } else {
+            element.style.display = "block";
+        }
+    }
+</script>
+{% endblock %}

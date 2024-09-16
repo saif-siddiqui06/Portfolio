@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero fade-in">
+    <div class="hero-content">
+        <p class="intro">Hi, my name is</p>
+        <h1 class="name">Mohammad Saif.</h1>
+        <h2 class="tagline">I build things for the web.</h2>
+        <p class="description">
+           <h3> Welcome to my portfolio! I'm a Python backend developer who loves crafting efficient, scalable web applications.</h3>
+        Feel free to explore my work here. And remember, as a backend developer, I'm responsible for making things work—so if the design looks off, just blame the front-end folks!
+        </p>
+    <!--    <a href="#portfolio" class="cta-button">Check out my portfolio!</a> -->
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about" class="section about interactive">
+    <h1>About Me</h1>
+    <p>
+        I am a dedicated Python backend developer with a passion for creating efficient, scalable, and robust web applications. My expertise lies in designing and implementing server-side logic, ensuring high performance and responsiveness to requests from the front-end.
+<br>
+        With a strong foundation in Python and extensive experience working with frameworks such as Django and Flask, I excel at developing RESTful APIs, integrating third-party services, and optimizing database interactions. My skill set also includes proficiency in various database technologies, including PostgreSQL, MySQL, and MongoDB.
+<br>            
+        In addition to my technical skills, I am a strong collaborator and communicator, able to work effectively within cross-functional teams. I enjoy solving complex problems and am always eager to learn new technologies and methodologies to stay at the forefront of the industry.
+<br>    
+        Explore my portfolio to see examples of my work and learn more about the projects I have contributed to. Whether you are looking for a skilled backend developer for your next project or simply want to connect and discuss the latest trends in software development, feel free to reach out!
+        
+        
+    </p>
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/mohammad-saif-4ba114201" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/saif-siddiqui06" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/your-twitter-username" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <a href="https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" class="download-resume">Download Resume</a>
+</section>
+
+<!-- My Work Section 
+<section id="work" class="section work interactive">
+    <h1>My Work</h1>
+    <p>Here are some of my projects:</p>
+    <div class="portfolio">
+        <div class="project fade-in">
+            <img src="{{ url_for('static', filename='images/project2.jpg') }}" alt="Project 2">
+            <h2>Project Title 2</h2>
+            <p>A brief description of the project, technologies used, and the problem it solves.</p>
+            <div class="project-media">
+                <img src="{{ url_for('static', filename='images/project2-thumbnail.jpg') }}" alt="Project 2 Thumbnail">
+                <div class="project-links">
+                    <a href="https://github.com/saif-siddiqui06/project2" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+-->
+
+<!-- Contact Me Section -->
+<section id="contact" class="section contact interactive">
+    <h1>Contact Me</h1>
+    <p>Feel free to reach out to me through the form below:</p>
+    <form action="/contact" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit" class="cta-button">Send Message</button>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('homepage') }}">Home</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('resume') }}">Resume</a></li>
+                <li><a href="{{ url_for('work') }}">Work</a></li>
+                <li><a href="https://linkedin.com/in/mohammad-saif-4ba114201" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/saif-siddiqui06" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/your-twitter-username" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-content">
+                        <h1>Welcome to My Portfolio</h1>
+                        <p>Explore my work and skills</p>
+                        <a href="#portfolio">View Portfolio</a>
+                    </div>
+                </section>
+        
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Mohammad Saif. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleDetails(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "block" || element.style.display === "") {
+                element.style.display = "none";
+            } else {
+                element.style.display = "block";
+            }
+        }
+    </script>
+    
+</body>
+</html>
