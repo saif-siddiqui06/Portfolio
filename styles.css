@@ -114,6 +114,31 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .stats b { display: block; font-size: 1.3rem; color: var(--accent); }
 .stats span { color: var(--muted); font-size: .88rem; }
 
+/* Experience */
+.timeline { list-style: none; border-left: 2px solid var(--border); margin-left: 6px; }
+.timeline > li { position: relative; padding: 0 0 36px 28px; }
+.timeline > li::before { content: ""; position: absolute; left: -7px; top: 8px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(110,231,183,0.15); }
+.tl-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; margin-bottom: 10px; }
+.tl-head h3 { font-size: 1.15rem; }
+.at { color: var(--accent); font-weight: 600; }
+.date { color: var(--muted); font-size: .8rem; }
+.timeline > li > ul:not(.stack) { list-style: none; }
+.timeline > li > ul:not(.stack) li { position: relative; padding-left: 18px; color: var(--muted); font-size: .95rem; margin-bottom: 6px; }
+.timeline > li > ul:not(.stack) li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+.timeline .stack { margin: 12px 0 0; }
+.sub-title { font-size: 1.2rem; margin: 30px 0 18px; }
+.edu { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.edu-card { padding: 22px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--border); }
+.edu-card h4 { font-size: 1.05rem; margin: 6px 0 2px; }
+.edu-card p { color: var(--muted); font-size: .92rem; }
+.edu-card b { display: inline-block; margin-top: 10px; color: var(--accent); font-size: .9rem; }
+.awards { display: grid; gap: 14px; }
+.awards li { display: flex; gap: 14px; align-items: flex-start; padding: 18px 20px; border-radius: var(--radius); background: var(--card); border: 1px solid var(--border); }
+.awards span { font-size: 1.4rem; line-height: 1; }
+.awards p { color: var(--muted); font-size: .9rem; }
+.email { margin-top: 14px; font-size: 1.05rem; }
+.email a { color: var(--accent); }
+
 /* Projects */
 .filters { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
 .chip { padding: 8px 16px; border-radius: 999px; border: 1px solid var(--border); background: transparent; color: var(--muted); font: inherit; font-size: .88rem; cursor: pointer; transition: all .2s; }

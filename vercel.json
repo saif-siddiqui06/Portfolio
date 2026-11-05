@@ -3,11 +3,12 @@
   "builds": [
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "styles.css", "use": "@vercel/static" },
-    { "src": "script.js", "use": "@vercel/static" }
+    { "src": "script.js", "use": "@vercel/static" },
+    { "src": "resume.pdf", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/skills/?", "status": 308, "headers": { "Location": "/#skills" } },
     { "src": "/(projects|work)/?", "status": 308, "headers": { "Location": "/#projects" } },
-    { "src": "/resume/?", "status": 307, "headers": { "Location": "https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" } }
+    { "src": "/resume/?", "status": 307, "headers": { "Location": "/resume.pdf" } }
   ]
 }

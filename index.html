@@ -25,10 +25,11 @@
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a class="btn btn-sm" href="https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" target="_blank" rel="noopener">Resume</a></li>
+        <li><a class="btn btn-sm" href="/resume.pdf" target="_blank" rel="noopener">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -39,9 +40,9 @@
       <p class="eyebrow mono"><span class="dot"></span> Open to AI / ML / Data Science roles</p>
       <h1>Hi, I'm <span class="grad">Mohammad Saif</span>.<br />I build AI systems that ship.</h1>
       <p class="lead">
-        AI &amp; Data Science Engineer (M.Tech Data Science) based in Delhi, India.
-        I design <strong>agentic RAG pipelines</strong>, <strong>computer-vision models</strong> and
-        <strong>NLP applications</strong>, and turn them into products people can actually use.
+        M.Tech Data Science graduate from <strong>Jamia Millia Islamia</strong> (CGPA 9.08), based in Delhi, India.
+        I build <strong>Generative AI &amp; RAG systems</strong>, <strong>machine-learning models</strong> and
+        <strong>data pipelines</strong>, and turn them into products people can actually use.
       </p>
       <div class="cta-row">
         <a class="btn" href="#projects">View projects</a>
@@ -52,8 +53,8 @@
         <pre><code><span class="k">from</span> saif <span class="k">import</span> Engineer
 
 me = Engineer(
-    focus=[<span class="s">"Agentic RAG"</span>, <span class="s">"Computer Vision"</span>, <span class="s">"NLP"</span>],
-    stack=[<span class="s">"PyTorch"</span>, <span class="s">"LangChain"</span>, <span class="s">"LangGraph"</span>, <span class="s">"FastAPI"</span>],
+    focus=[<span class="s">"GenAI &amp; RAG"</span>, <span class="s">"Machine Learning"</span>, <span class="s">"Data Eng"</span>],
+    stack=[<span class="s">"LangChain"</span>, <span class="s">"PyTorch"</span>, <span class="s">"dbt"</span>, <span class="s">"FastAPI"</span>],
     location=<span class="s">"Delhi, IN"</span>,
 )
 me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">▍</span></code></pre>
@@ -66,14 +67,16 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
       <div class="about-grid">
         <div class="about-text">
           <p>
-            I started out as a Python backend developer building Django and Flask apps, and moved into
-            AI through my M.Tech in Data Science. Today I work end to end: from data collection and
-            model training to retrieval pipelines, APIs and the interface on top.
+            I'm an M.Tech Data Science graduate from Jamia Millia Islamia (CGPA 9.08) with hands-on experience
+            in Machine Learning, Generative AI, RAG, LLMs and Data Engineering. I started out building Python web apps
+            with Django and Flask, and today I work end to end: from data ingestion and feature engineering to
+            model training, retrieval pipelines, APIs and the interface on top.
           </p>
           <p>
-            I like systems that are measurable and reliable: hybrid retrieval with reranking and citations,
-            automated evaluation for LLM answers, and detection models benchmarked across architectures
-            before one goes to production.
+            I like systems that are measurable and reliable: hybrid retrieval with RRF fusion and cross-encoder
+            reranking, source-grounded answers with citations, and ML models compared on proper chronological
+            splits. My groundwater-level ANN reached <strong>R² = 0.984</strong>, and my team took
+            <strong>1st place</strong> at the SCRIET Hackathon analysing 50K+ records.
           </p>
           <p>
             Outside of models, I build small tools that remove busywork, like browser extensions
@@ -81,17 +84,73 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
           </p>
         </div>
         <ul class="stats">
-          <li><b>M.Tech</b><span>Data Science</span></li>
-          <li><b>RAG</b><span>Agents, retrieval, eval</span></li>
-          <li><b>YOLO</b><span>v8 · v9 · v10 vision</span></li>
-          <li><b>Full-stack</b><span>FastAPI → Streamlit / JS</span></li>
+          <li><b>9.08</b><span>M.Tech CGPA, Jamia Millia Islamia</span></li>
+          <li><b>R² 0.984</b><span>Groundwater prediction (ANN)</span></li>
+          <li><b>1st place</b><span>SCRIET Hackathon</span></li>
+          <li><b>2</b><span>Internships: AI/ML &amp; Data Engineering</span></li>
         </ul>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section reveal">
+      <h2 class="section-title"><span class="mono num">02.</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="tl-head">
+            <h3>AI/ML Intern <span class="at">@ AICTE – Edunet Foundation</span></h3>
+            <span class="mono date">Jun 2025 – Jul 2025</span>
+          </div>
+          <ul>
+            <li>Processed 100k+ records across 10+ domains: data cleaning, EDA and feature engineering with Python, Pandas and NumPy.</li>
+            <li>Implemented and compared 6 ML algorithms: Linear &amp; Logistic Regression, KNN, Decision Tree, Random Forest and SVM.</li>
+            <li>Built 2 predictive projects: Employee Salary Prediction (regression) and Student Education Loan Prediction (classification).</li>
+            <li>Tuned KNN across 5 neighbourhood values with feature scaling and a 75:25 split; evaluated with MAE, MSE, RMSE, R², accuracy, precision and recall.</li>
+          </ul>
+          <ul class="stack"><li>Python</li><li>scikit-learn</li><li>Pandas</li><li>NumPy</li></ul>
+        </li>
+        <li>
+          <div class="tl-head">
+            <h3>Data Engineering Intern <span class="at">@ ZestBotz</span></h3>
+            <span class="mono date">Apr 2025 – Jun 2025</span>
+          </div>
+          <ul>
+            <li>Integrated OpenWeather API data for 15+ cities, capturing 20+ weather attributes (temperature, humidity, pressure, wind, conditions).</li>
+            <li>Designed an Airbyte → PostgreSQL ingestion pipeline refreshing every 8 hours to build a historical weather store.</li>
+            <li>Developed 5+ dbt SQL models for staging, cleaning, aggregation and city/time-based analytics over 100K+ observations.</li>
+            <li>Implemented 5+ data-quality checks for missing values, duplicates, invalid measurements and inconsistent timestamps.</li>
+          </ul>
+          <ul class="stack"><li>Airbyte</li><li>dbt</li><li>PostgreSQL</li><li>SQL</li></ul>
+        </li>
+      </ol>
+
+      <h3 class="sub-title">Education</h3>
+      <div class="edu">
+        <div class="edu-card">
+          <span class="mono date">Aug 2024 – Jun 2026</span>
+          <h4>M.Tech in Data Science</h4>
+          <p>Jamia Millia Islamia University, Delhi</p>
+          <b>CGPA 9.08</b>
+        </div>
+        <div class="edu-card">
+          <span class="mono date">Sep 2020 – May 2024</span>
+          <h4>B.Tech in Information Technology</h4>
+          <p>Chaudhary Charan Singh University, Meerut</p>
+          <b>CGPA 7.52</b>
+        </div>
+      </div>
+
+      <h3 class="sub-title">Achievements &amp; Certifications</h3>
+      <ul class="awards">
+        <li><span>🏆</span><div><b>1st Position, SCRIET Hackathon</b><p>Led a team analysing 50K+ records, deriving insights and building a web dashboard.</p></div></li>
+        <li><span>📜</span><div><b>Accenture: Digital Skills: Artificial Intelligence</b><p>2026 · Overall score 83%</p></div></li>
+        <li><span>📜</span><div><b>Udemy: Complete Data Science and Training</b><p>2026</p></div></li>
+      </ul>
+    </section>
+
     <!-- PROJECTS -->
     <section id="projects" class="section reveal">
-      <h2 class="section-title"><span class="mono num">02.</span> Featured projects</h2>
+      <h2 class="section-title"><span class="mono num">03.</span> Featured projects</h2>
       <div class="filters" role="tablist">
         <button class="chip active" data-filter="all">All</button>
         <button class="chip" data-filter="llm">LLM / RAG</button>
@@ -111,14 +170,28 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
         </article>
 
         <article class="card featured" data-cat="llm">
-          <div class="card-top"><span class="tag">RAG</span><span class="live">● Live</span></div>
+          <div class="card-top"><span class="tag">Agentic AI</span><span class="mono date">Jan – Mar 2026</span></div>
+          <h3>TravelPilot: AI Travel Planning Agent</h3>
+          <p>Agentic travel planner that uses LLM intent understanding and dynamic tool calling to generate personalised multi-day itineraries. A hybrid architecture pairs LLM reasoning with deterministic Python services for budget validation, geographic clustering, route optimisation and schedule feasibility, then scores itineraries on budget fit, geographic efficiency, pace and weather. PostgreSQL persistent memory and FastAPI REST APIs.</p>
+          <ul class="stack"><li>LLM tool calling</li><li>FastAPI</li><li>PostgreSQL</li><li>Streamlit</li></ul>
+        </article>
+
+        <article class="card featured" data-cat="llm">
+          <div class="card-top"><span class="tag">Advanced RAG</span><span class="live">● Live</span></div>
           <h3>SmartDoc AI</h3>
-          <p>Fast document Q&amp;A across PDF, Word, Excel, CSV, JSON and Markdown, powered entirely by free LLM providers (Groq, Gemini, OpenRouter, Ollama).</p>
-          <ul class="stack"><li>LangChain</li><li>FAISS</li><li>Groq</li><li>Streamlit</li></ul>
+          <p>RAG document assistant for 7 formats (PDF, DOCX, XLSX, CSV, JSON, MD, TXT). 800-char chunks with 150-char overlap and MiniLM embeddings; hybrid BM25 + vector search fused with RRF over the top 25 passages, then FlashRank cross-encoder reranking to the top 5 for source-grounded answers with page-level citations. Supports 4 cloud/local LLMs and 6 productivity tools (summaries, quizzes, flashcards and more).</p>
+          <ul class="stack"><li>LangChain</li><li>FAISS</li><li>BM25</li><li>FlashRank</li><li>Groq</li><li>Streamlit</li></ul>
           <div class="links">
             <a href="https://smartdoc-ai-document-intelligence-suite.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a>
             <a href="https://github.com/saif-siddiqui06/SmartDoc-AI-Document-Intelligence-Suite" target="_blank" rel="noopener">Code ↗</a>
           </div>
+        </article>
+
+        <article class="card featured" data-cat="ml">
+          <div class="card-top"><span class="tag">Machine Learning</span><span class="mono date">Aug – Oct 2025</span></div>
+          <h3>Groundwater Level Prediction (MLR vs ANN)</h3>
+          <p>End-to-end prediction pipeline for Delhi NCR combining 5 public data sources (groundwater, soil, demographic, irrigation, environmental). Cleaned and engineered 20+ columns, including cyclical sine/cosine features, and compared MLR and ANN on a chronological 70:30 split. The ANN reached <b>R² = 0.984, RMSE = 1.275</b>, versus R² = 0.972 for MLR.</p>
+          <ul class="stack"><li>TensorFlow/Keras</li><li>scikit-learn</li><li>Pandas</li><li>EDA</li></ul>
         </article>
 
         <article class="card" data-cat="ml">
@@ -258,35 +331,45 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
 
     <!-- SKILLS -->
     <section id="skills" class="section reveal">
-      <h2 class="section-title"><span class="mono num">03.</span> Skills</h2>
+      <h2 class="section-title"><span class="mono num">04.</span> Skills</h2>
       <div class="skills">
         <div class="skill-group">
-          <h3>AI / Machine Learning</h3>
-          <ul><li>PyTorch</li><li>scikit-learn</li><li>Hugging Face</li><li>YOLO (v8–v10)</li><li>OpenCV</li><li>NLP</li></ul>
+          <h3>AI / Gen AI</h3>
+          <ul><li>LangChain</li><li>LangGraph</li><li>Hugging Face</li><li>Transformers</li><li>LLMs</li><li>RAG</li><li>Prompt Engineering</li><li>AI Agents</li><li>Tool Calling</li><li>Embeddings</li></ul>
         </div>
         <div class="skill-group">
-          <h3>LLMs &amp; RAG</h3>
-          <ul><li>LangChain</li><li>LangGraph</li><li>FAISS</li><li>Hybrid retrieval</li><li>Reranking</li><li>Gemini · Groq · Ollama</li></ul>
+          <h3>LLM &amp; Retrieval</h3>
+          <ul><li>Groq</li><li>Gemini</li><li>Ollama</li><li>FAISS</li><li>BM25</li><li>FlashRank</li><li>Hybrid Retrieval</li></ul>
         </div>
         <div class="skill-group">
-          <h3>Backend &amp; Data</h3>
-          <ul><li>Python</li><li>FastAPI</li><li>Flask</li><li>Django</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul>
+          <h3>Machine Learning &amp; CV</h3>
+          <ul><li>scikit-learn</li><li>TensorFlow/Keras</li><li>PyTorch</li><li>Regression</li><li>Classification</li><li>Feature Engineering</li><li>Model Evaluation</li><li>YOLO</li><li>OpenCV</li></ul>
         </div>
         <div class="skill-group">
-          <h3>Product &amp; DevOps</h3>
-          <ul><li>Streamlit</li><li>Docker</li><li>Git &amp; GitHub</li><li>JavaScript</li><li>Chrome Extensions (MV3)</li><li>Vercel</li></ul>
+          <h3>Data Engineering</h3>
+          <ul><li>Airbyte</li><li>dbt</li><li>PostgreSQL</li><li>SQL</li><li>Data Quality</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Data Analysis</h3>
+          <ul><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li><li>Statistics</li><li>EDA</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend &amp; Tools</h3>
+          <ul><li>Python</li><li>FastAPI</li><li>Flask</li><li>Django</li><li>Streamlit</li><li>Docker</li><li>Git &amp; GitHub</li><li>Jupyter</li><li>JavaScript</li></ul>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section contact reveal">
-      <h2 class="section-title"><span class="mono num">04.</span> Let's talk</h2>
-      <p class="lead">I'm open to AI / ML / Data Science roles and interesting collaborations. The fastest way to reach me is LinkedIn.</p>
+      <h2 class="section-title"><span class="mono num">05.</span> Let's talk</h2>
+      <p class="lead">I'm open to AI / ML / Data Science roles and interesting collaborations. Drop me an email or message me on LinkedIn.</p>
+      <p class="mono email"><a href="mailto:ms22002200@gmail.com">ms22002200@gmail.com</a></p>
       <div class="cta-row center">
         <a class="btn" href="https://www.linkedin.com/in/mohammad-saif-4ba114201" target="_blank" rel="noopener">Message me on LinkedIn</a>
         <a class="btn btn-ghost" href="https://github.com/saif-siddiqui06" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" target="_blank" rel="noopener">Resume</a>
+        <a class="btn btn-ghost" href="mailto:ms22002200@gmail.com">Email me</a>
+        <a class="btn btn-ghost" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
     </section>
   </main>
