@@ -5,6 +5,14 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const nav = document.querySelector(".nav");
 addEventListener("scroll", () => nav.classList.toggle("scrolled", scrollY > 10), { passive: true });
 
+// Theme toggle (dark / light), remembered across visits
+document.querySelector(".theme-btn").addEventListener("click", () => {
+  const root = document.documentElement;
+  const next = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+  root.setAttribute("data-theme", next);
+  localStorage.setItem("theme", next);
+});
+
 // Mobile menu
 const menuBtn = document.querySelector(".menu-btn");
 const links = document.querySelector(".nav-links");
