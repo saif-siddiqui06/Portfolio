@@ -29,7 +29,9 @@ const io = new IntersectionObserver(
   (entries) => entries.forEach((en) => {
     if (en.isIntersecting) { en.target.classList.add("visible"); io.unobserve(en.target); }
   }),
-  { threshold: 0.12 }
+  // threshold 0: a ratio-based threshold never fires for sections taller than
+  // the screen (e.g. Projects on phones), which left them invisible.
+  { threshold: 0, rootMargin: "0px 0px -60px 0px" }
 );
 document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
@@ -40,7 +42,7 @@ const itemIO = new IntersectionObserver(
   (entries) => entries.forEach((en) => {
     if (en.isIntersecting) { en.target.classList.add("in"); itemIO.unobserve(en.target); }
   }),
-  { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+  { threshold: 0, rootMargin: "0px 0px -40px 0px" }
 );
 [".stats li", ".xp-card", ".edu-card", ".awards li", ".card", ".skill-group"].forEach((sel) => {
   document.querySelectorAll(sel).forEach((el, i) => {
