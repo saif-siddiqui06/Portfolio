@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>document.documentElement.classList.add('js')</script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Saif · AI & Data Science Engineer</title>
+  <meta name="description" content="Mohammad Saif — AI & Data Science Engineer building agentic RAG systems, computer vision models and AI-powered products." />
+  <meta property="og:title" content="Mohammad Saif · AI & Data Science Engineer" />
+  <meta property="og:description" content="Agentic RAG, computer vision and NLP systems — shipped as real products." />
+  <meta name="theme-color" content="#0b0f17" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%236ee7b7'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='700' text-anchor='middle' fill='%230b0f17'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a href="#top" class="logo">saif<span>.ai</span></a>
+    <nav>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn btn-sm" href="https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow mono"><span class="dot"></span> Open to AI / ML / Data Science roles</p>
+      <h1>Hi, I'm <span class="grad">Mohammad Saif</span>.<br />I build AI systems that ship.</h1>
+      <p class="lead">
+        AI &amp; Data Science Engineer (M.Tech Data Science) based in Delhi, India.
+        I design <strong>agentic RAG pipelines</strong>, <strong>computer-vision models</strong> and
+        <strong>NLP applications</strong>, and turn them into products people can actually use.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="#projects">View projects</a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-terminal mono" aria-hidden="true">
+        <div class="term-bar"><i></i><i></i><i></i><span>agent.py</span></div>
+        <pre><code><span class="k">from</span> saif <span class="k">import</span> Engineer
+
+me = Engineer(
+    focus=[<span class="s">"Agentic RAG"</span>, <span class="s">"Computer Vision"</span>, <span class="s">"NLP"</span>],
+    stack=[<span class="s">"PyTorch"</span>, <span class="s">"LangChain"</span>, <span class="s">"LangGraph"</span>, <span class="s">"FastAPI"</span>],
+    location=<span class="s">"Delhi, IN"</span>,
+)
+me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">▍</span></code></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h2 class="section-title"><span class="mono num">01.</span> About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I started out as a Python backend developer building Django and Flask apps, and moved into
+            AI through my M.Tech in Data Science. Today I work end to end: from data collection and
+            model training to retrieval pipelines, APIs and the interface on top.
+          </p>
+          <p>
+            I like systems that are measurable and reliable: hybrid retrieval with reranking and citations,
+            automated evaluation for LLM answers, and detection models benchmarked across architectures
+            before one goes to production.
+          </p>
+          <p>
+            Outside of models, I build small tools that remove busywork, like browser extensions
+            that autofill job applications or extract text, all privacy-first and running locally.
+          </p>
+        </div>
+        <ul class="stats">
+          <li><b>M.Tech</b><span>Data Science</span></li>
+          <li><b>RAG</b><span>Agents, retrieval, eval</span></li>
+          <li><b>YOLO</b><span>v8 · v9 · v10 vision</span></li>
+          <li><b>Full-stack</b><span>FastAPI → Streamlit / JS</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section reveal">
+      <h2 class="section-title"><span class="mono num">02.</span> Featured projects</h2>
+      <div class="filters" role="tablist">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="llm">LLM / RAG</button>
+        <button class="chip" data-filter="cv">Computer Vision</button>
+        <button class="chip" data-filter="ml">ML / NLP</button>
+        <button class="chip" data-filter="tools">Tools &amp; Automation</button>
+        <button class="chip" data-filter="web">Web Apps</button>
+      </div>
+
+      <div class="projects">
+        <article class="card featured" data-cat="llm">
+          <div class="card-top"><span class="tag">Agentic AI</span></div>
+          <h3>Agentic RAG Research Assistant</h3>
+          <p>An LLM agent that routes between document retrieval, web search and a calculator tool, on top of an advanced RAG pipeline with hybrid retrieval, reranking, query rewriting, citations, conversational memory and automated evaluation. Dockerized with PostgreSQL, structured logging and rate limiting.</p>
+          <ul class="stack"><li>Gemini</li><li>FastAPI</li><li>PostgreSQL</li><li>Streamlit</li><li>Docker</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/RAG-Intelligence-Assistant" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card featured" data-cat="llm">
+          <div class="card-top"><span class="tag">RAG</span><span class="live">● Live</span></div>
+          <h3>SmartDoc AI</h3>
+          <p>Fast document Q&amp;A across PDF, Word, Excel, CSV, JSON and Markdown, powered entirely by free LLM providers (Groq, Gemini, OpenRouter, Ollama).</p>
+          <ul class="stack"><li>LangChain</li><li>FAISS</li><li>Groq</li><li>Streamlit</li></ul>
+          <div class="links">
+            <a href="https://smartdoc-ai-document-intelligence-suite.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/saif-siddiqui06/SmartDoc-AI-Document-Intelligence-Suite" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="ml">
+          <div class="card-top"><span class="tag">M.Tech project</span><span class="live">● Live</span></div>
+          <h3>Hate Speech Detection &amp; Moderation</h3>
+          <p>Classifies text and speech as normal, abusive or hate speech, with toxicity scoring, keyword highlighting, polite rewrites and a social-media moderation simulator.</p>
+          <ul class="stack"><li>scikit-learn</li><li>NLP</li><li>Speech-to-text</li><li>Streamlit</li></ul>
+          <div class="links">
+            <a href="https://hate-speech-detection-grmxl9ny798gwmzbu2pwwr.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/saif-siddiqui06/hate-speech-detection" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cv">
+          <div class="card-top"><span class="tag">Computer Vision</span><span class="live">● Live</span></div>
+          <h3>Wildfire Detection</h3>
+          <p>End-to-end fire &amp; smoke detection on images, video and live webcam: manual annotation, augmentation, and a benchmark of YOLOv8, v9 and v10, deployed behind a Flask dashboard.</p>
+          <ul class="stack"><li>YOLOv10</li><li>OpenCV</li><li>Flask</li></ul>
+          <div class="links">
+            <a href="https://wildfire-detection-app-dizjzodmvxcwuxlh5usrry.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/saif-siddiqui06/Wild-Fire-Detection" target="_blank" rel="noopener">Code ↗</a>
+            <a href="https://github.com/saif-siddiqui06/wildfire-detection-streamlit" target="_blank" rel="noopener">Streamlit app ↗</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="tools">
+          <div class="card-top"><span class="tag">Chrome extension</span></div>
+          <h3>FormFill</h3>
+          <p>Privacy-first autofill for job applications and Google Forms. Reads your resume on-device, asks before saving anything, and never submits on its own.</p>
+          <ul class="stack"><li>JavaScript</li><li>Manifest V3</li><li>IndexedDB</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/job-application-autofill" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="tools">
+          <div class="card-top"><span class="tag">Browser extension</span></div>
+          <h3>Telegram Text Extractor</h3>
+          <p>Side-panel extension to copy, search and export text from Telegram Web channels and groups. Nothing leaves the browser.</p>
+          <ul class="stack"><li>JavaScript</li><li>Manifest V3</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/telegram-text-extractor-extension" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="tools llm">
+          <div class="card-top"><span class="tag">Automation</span></div>
+          <h3>Apply &amp; Pray</h3>
+          <p>AI-assisted LinkedIn job application bot that searches roles, fills forms, answers screening questions and tracks applications in a local dashboard.</p>
+          <ul class="stack"><li>Python</li><li>Selenium</li><li>LLMs</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/Apply-and-Pray" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="ml">
+          <div class="card-top"><span class="tag">Machine Learning</span><span class="live">● Live</span></div>
+          <h3>Education Loan Prediction</h3>
+          <p>Predicts education loan approval and probability, and estimates EMI, total repayment, interest, debt-to-income ratio and risk level, with financial advice based on model confidence.</p>
+          <ul class="stack"><li>Python</li><li>scikit-learn</li><li>Streamlit</li></ul>
+          <div class="links">
+            <a href="https://educationloanpredection-kzy4wtxyl6xalviddgskym.streamlit.app/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/saif-siddiqui06/education_loan_predection" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="ml">
+          <div class="card-top"><span class="tag">NLP toolkit</span><span class="live">● Live</span></div>
+          <h3>Simple AI Solution</h3>
+          <p>Flask app bundling practical NLP tools in one interface: sentiment analysis, named entity recognition (spaCy), text summarization, topic modeling and audio input.</p>
+          <ul class="stack"><li>Flask</li><li>spaCy</li><li>NLP</li></ul>
+          <div class="links">
+            <a href="https://simple-ai-solution.onrender.com/" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/saif-siddiqui06/Simple-ai-solution" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="cv">
+          <div class="card-top"><span class="tag">OCR</span></div>
+          <h3>Scanned PDF → Word (OCR)</h3>
+          <p>Converts scanned multi-page PDFs into editable Word documents using EasyOCR, with a clean web UI and one-click download.</p>
+          <ul class="stack"><li>EasyOCR</li><li>Flask</li><li>pdf2image</li><li>python-docx</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/pdf-extraction" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="tools">
+          <div class="card-top"><span class="tag">Automation</span></div>
+          <h3>Apply Rocket</h3>
+          <p>Sends personalised recruiter outreach emails from Gmail using a recruiter CSV and an optional resume attachment. Streamlit and Flask versions.</p>
+          <ul class="stack"><li>Python</li><li>Streamlit</li><li>Flask</li><li>SMTP</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/job-hunter" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="tools">
+          <div class="card-top"><span class="tag">Simulation</span></div>
+          <h3>FastBox Delivery System</h3>
+          <p>Simulates a day of deliveries: nearest-agent assignment, pickup/drop routing, distance and efficiency metrics, and JSON/CSV performance reports, with a hand-written JSON parser.</p>
+          <ul class="stack"><li>Python</li><li>Algorithms</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/fastbox-delivery-system" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><span class="tag">Django</span><span class="live">● Live</span></div>
+          <h3>Recipe Web App</h3>
+          <p>Full-featured recipe platform with authentication, recipe CRUD, category filtering, search and user profiles.</p>
+          <ul class="stack"><li>Django</li><li>Python</li><li>SQL</li></ul>
+          <div class="links">
+            <a href="https://recipebook-omega.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
+            <a href="https://github.com/saif-siddiqui06/Recipe-" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><span class="tag">Django</span></div>
+          <h3>Resume Builder</h3>
+          <p>Create professional resumes from customizable templates with real-time preview and PDF export.</p>
+          <ul class="stack"><li>Django</li><li>PDF</li><li>HTML/CSS</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/Resume-Builder-Application" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="card" data-cat="web">
+          <div class="card-top"><span class="tag">Django</span></div>
+          <h3>Weather Dual City</h3>
+          <p>Real-time weather comparison for two cities side by side using a weather API.</p>
+          <ul class="stack"><li>Django</li><li>REST API</li></ul>
+          <div class="links"><a href="https://github.com/saif-siddiqui06/Weather-Dual-City" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+      </div>
+
+      <div class="mini-list">
+        <h3>More on GitHub</h3>
+        <ul>
+          <li><a href="https://github.com/saif-siddiqui06/movie-recommender-system" target="_blank" rel="noopener">Movie Recommender System</a></li>
+          <li><a href="https://github.com/saif-siddiqui06/LibrabyManagementSystem" target="_blank" rel="noopener">Library Management System</a></li>
+          <li><a href="https://github.com/saif-siddiqui06/whatsapp_automation" target="_blank" rel="noopener">WhatsApp Automation</a></li>
+          <li><a href="https://github.com/saif-siddiqui06/TODO_PROJECT" target="_blank" rel="noopener">To-Do App</a></li>
+          <li><a href="https://github.com/saif-siddiqui06/Zingle-play" target="_blank" rel="noopener">Zingle Play (Flutter)</a></li>
+          <li><a href="https://github.com/saif-siddiqui06/LW-project" target="_blank" rel="noopener">Monthly Expense Calculator</a></li>
+        </ul>
+      </div>
+      <p class="more"><a href="https://github.com/saif-siddiqui06?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a></p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title"><span class="mono num">03.</span> Skills</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>AI / Machine Learning</h3>
+          <ul><li>PyTorch</li><li>scikit-learn</li><li>Hugging Face</li><li>YOLO (v8–v10)</li><li>OpenCV</li><li>NLP</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>LLMs &amp; RAG</h3>
+          <ul><li>LangChain</li><li>LangGraph</li><li>FAISS</li><li>Hybrid retrieval</li><li>Reranking</li><li>Gemini · Groq · Ollama</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Backend &amp; Data</h3>
+          <ul><li>Python</li><li>FastAPI</li><li>Flask</li><li>Django</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Product &amp; DevOps</h3>
+          <ul><li>Streamlit</li><li>Docker</li><li>Git &amp; GitHub</li><li>JavaScript</li><li>Chrome Extensions (MV3)</li><li>Vercel</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact reveal">
+      <h2 class="section-title"><span class="mono num">04.</span> Let's talk</h2>
+      <p class="lead">I'm open to AI / ML / Data Science roles and interesting collaborations. The fastest way to reach me is LinkedIn.</p>
+      <div class="cta-row center">
+        <a class="btn" href="https://www.linkedin.com/in/mohammad-saif-4ba114201" target="_blank" rel="noopener">Message me on LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/saif-siddiqui06" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://drive.google.com/file/d/1_MYATqVZHpP3OMNRlHKlIsZuGcXqx1pO/view" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <p>Designed &amp; built by Mohammad Saif · <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
