@@ -1,4 +1,8 @@
 {
+  "framework": null,
+  "installCommand": "",
+  "buildCommand": "",
+  "outputDirectory": ".",
   "cleanUrls": true,
   "redirects": [
     { "source": "/skills", "destination": "/#skills", "permanent": true },
