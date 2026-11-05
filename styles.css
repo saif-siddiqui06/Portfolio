@@ -248,3 +248,79 @@ body, .nav, .card, .skill-group, .stats li, .edu-card, .awards li { transition: 
 [data-theme="light"] .card.featured { background: linear-gradient(160deg, rgba(16,185,129,0.08), rgba(37,99,235,0.04) 50%, var(--card)); }
 [data-theme="light"] .chip.active { background: rgba(5,150,105,0.1); border-color: rgba(5,150,105,0.4); }
 [data-theme="light"] .hero-terminal { box-shadow: 0 30px 60px -30px rgba(15,23,42,.45); }
+/* Experience cards */
+.xp { display: grid; gap: 22px; }
+.xp-card {
+  position: relative; display: grid; grid-template-columns: 56px 1fr; gap: 22px;
+  padding: 28px; border-radius: 20px; background: var(--card); border: 1px solid var(--border); overflow: hidden;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.xp-card::before {
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 3px;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  transform: scaleY(0); transform-origin: top; transition: transform .6s ease;
+}
+.xp-card:hover { transform: translateY(-3px); border-color: rgba(110,231,183,0.35); box-shadow: 0 20px 40px -26px rgba(110,231,183,0.4); }
+.xp-card:hover::before, .xp-card.in::before { transform: scaleY(1); }
+.xp-logo {
+  width: 56px; height: 56px; border-radius: 14px; display: grid; place-items: center;
+  font-weight: 800; font-size: 1.05rem; color: var(--btn-text);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+.xp-logo.alt { background: linear-gradient(135deg, var(--accent-2), #a78bfa); }
+.xp-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; }
+.xp-head h3 { font-size: 1.25rem; letter-spacing: -0.01em; }
+.xp-company { color: var(--accent); font-weight: 600; font-size: .95rem; }
+.xp-date { font-size: .78rem; color: var(--muted); padding: 5px 12px; border: 1px solid var(--border); border-radius: 999px; white-space: nowrap; }
+.xp-pitch { margin: 14px 0 18px; font-size: 1.02rem; color: var(--text); }
+.xp-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 18px; }
+.xp-metrics div { padding: 14px; border-radius: 12px; background: var(--pill-bg); border: 1px solid var(--border); }
+.xp-metrics b { display: block; font-size: 1.45rem; font-weight: 800; letter-spacing: -0.02em;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.xp-metrics span { font-size: .78rem; color: var(--muted); }
+.xp-points { list-style: none; }
+.xp-points li { position: relative; padding-left: 20px; margin-bottom: 8px; color: var(--muted); font-size: .95rem; }
+.xp-points li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
+.xp-points strong { color: var(--text); font-weight: 600; }
+.xp .stack { margin: 14px 0 0; }
+@media (max-width: 820px) {
+  .xp-card { grid-template-columns: 1fr; gap: 14px; padding: 22px; }
+  .xp-logo { width: 46px; height: 46px; font-size: .95rem; }
+  .xp-metrics { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Contact extras */
+.contact .lead strong { color: var(--text); }
+.freelance { margin-top: 26px; color: var(--muted); font-size: .92rem; }
+.freelance a { color: var(--accent); font-weight: 600; white-space: nowrap; }
+.freelance a:hover { text-decoration: underline; }
+
+/* Scroll progress */
+.progress { position: fixed; top: 0; left: 0; right: 0; height: 2px; z-index: 100; transform-origin: 0 50%; transform: scaleX(0);
+  background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+
+/* Active nav link */
+.nav-links a.active:not(.btn) { color: var(--text); }
+.nav-links a:not(.btn) { position: relative; }
+.nav-links a:not(.btn)::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; border-radius: 2px;
+  background: var(--accent); transform: scaleX(0); transition: transform .3s ease; }
+.nav-links a.active:not(.btn)::after { transform: scaleX(1); }
+
+/* Hero entrance (subtle, staggered) */
+.js .hero > * { opacity: 0; animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards; }
+.js .hero > :nth-child(1) { animation-delay: .05s; }
+.js .hero > :nth-child(2) { animation-delay: .15s; }
+.js .hero > :nth-child(3) { animation-delay: .28s; }
+.js .hero > :nth-child(4) { animation-delay: .4s; }
+.js .hero > :nth-child(5) { animation-delay: .55s; }
+@keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+
+/* Staggered items inside sections */
+.js .stagger { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+.js .stagger.in { opacity: 1; transform: none; }
+.js .card.stagger.in:hover, .js .xp-card.stagger.in:hover { transform: translateY(-4px); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .hero > *, .js .stagger { opacity: 1 !important; transform: none !important; animation: none !important; transition: none !important; }
+  .progress { display: none; }
+}

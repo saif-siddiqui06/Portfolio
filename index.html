@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="bg-glow" aria-hidden="true"></div>
 
@@ -48,7 +49,7 @@
   <main>
     <!-- HERO -->
     <section class="hero">
-      <p class="eyebrow mono"><span class="dot"></span> Open to AI / ML / Data Science roles</p>
+      <p class="eyebrow mono"><span class="dot"></span> Open to full-time AI / ML / Data Science roles</p>
       <h1>Hi, I'm <span class="grad">Mohammad Saif</span>.<br />I build AI systems that ship.</h1>
       <p class="lead">
         M.Tech Data Science graduate from <strong>Jamia Millia Islamia</strong> (CGPA 9.08), based in Delhi, India.
@@ -90,8 +91,9 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
             <strong>1st place</strong> at the SCRIET Hackathon analysing 50K+ records.
           </p>
           <p>
-            Outside of models, I build small tools that remove busywork, like browser extensions
-            that autofill job applications or extract text, all privacy-first and running locally.
+            I also build and ship my own products: privacy-first Chrome extensions like FormFill,
+            offline Android apps in Flutter, and AI tools I use every day. Building end to end is how
+            I learn fastest, and it's the mindset I bring to every team.
           </p>
         </div>
         <ul class="stats">
@@ -106,34 +108,59 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
     <!-- EXPERIENCE -->
     <section id="experience" class="section reveal">
       <h2 class="section-title"><span class="mono num">02.</span> Experience</h2>
-      <ol class="timeline">
-        <li>
-          <div class="tl-head">
-            <h3>AI/ML Intern <span class="at">@ AICTE – Edunet Foundation</span></h3>
-            <span class="mono date">Jun 2025 – Jul 2025</span>
+      <div class="xp">
+        <article class="xp-card">
+          <div class="xp-rail"><div class="xp-logo" aria-hidden="true">AI</div></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <h3>AI/ML Intern</h3>
+                <p class="xp-company">AICTE – Edunet Foundation</p>
+              </div>
+              <span class="mono xp-date">Jun – Jul 2025</span>
+            </div>
+            <p class="xp-pitch">Turned raw, messy datasets into working predictive models, from cleaning and EDA to tuned, evaluated ML.</p>
+            <div class="xp-metrics">
+              <div><b data-count="100" data-suffix="k+">100k+</b><span>records processed</span></div>
+              <div><b data-count="10" data-suffix="+">10+</b><span>data domains</span></div>
+              <div><b data-count="6">6</b><span>ML algorithms compared</span></div>
+              <div><b data-count="2">2</b><span>predictive models built</span></div>
+            </div>
+            <ul class="xp-points">
+              <li>Built <strong>Employee Salary Prediction</strong> (regression) and <strong>Student Education Loan Prediction</strong> (classification).</li>
+              <li>Benchmarked Linear/Logistic Regression, KNN, Decision Tree, Random Forest and SVM; tuned KNN across 5 k-values with scaling and a 75:25 split.</li>
+              <li>Evaluated with MAE, MSE, RMSE, R², accuracy, precision and recall to pick the best model, not just the first one.</li>
+            </ul>
+            <ul class="stack"><li>Python</li><li>scikit-learn</li><li>Pandas</li><li>NumPy</li></ul>
           </div>
-          <ul>
-            <li>Processed 100k+ records across 10+ domains: data cleaning, EDA and feature engineering with Python, Pandas and NumPy.</li>
-            <li>Implemented and compared 6 ML algorithms: Linear &amp; Logistic Regression, KNN, Decision Tree, Random Forest and SVM.</li>
-            <li>Built 2 predictive projects: Employee Salary Prediction (regression) and Student Education Loan Prediction (classification).</li>
-            <li>Tuned KNN across 5 neighbourhood values with feature scaling and a 75:25 split; evaluated with MAE, MSE, RMSE, R², accuracy, precision and recall.</li>
-          </ul>
-          <ul class="stack"><li>Python</li><li>scikit-learn</li><li>Pandas</li><li>NumPy</li></ul>
-        </li>
-        <li>
-          <div class="tl-head">
-            <h3>Data Engineering Intern <span class="at">@ ZestBotz</span></h3>
-            <span class="mono date">Apr 2025 – Jun 2025</span>
+        </article>
+
+        <article class="xp-card">
+          <div class="xp-rail"><div class="xp-logo alt" aria-hidden="true">ZB</div></div>
+          <div class="xp-body">
+            <div class="xp-head">
+              <div>
+                <h3>Data Engineering Intern</h3>
+                <p class="xp-company">ZestBotz</p>
+              </div>
+              <span class="mono xp-date">Apr – Jun 2025</span>
+            </div>
+            <p class="xp-pitch">Built an automated weather-data platform end to end: API ingestion, warehouse, dbt transformations and quality checks.</p>
+            <div class="xp-metrics">
+              <div><b data-count="15" data-suffix="+">15+</b><span>cities tracked</span></div>
+              <div><b data-count="20" data-suffix="+">20+</b><span>weather attributes</span></div>
+              <div><b data-count="100" data-suffix="K+">100K+</b><span>observations modelled</span></div>
+              <div><b data-count="8" data-suffix="h">8h</b><span>auto-refresh cycle</span></div>
+            </div>
+            <ul class="xp-points">
+              <li>Designed an <strong>Airbyte → PostgreSQL</strong> ingestion pipeline pulling OpenWeather data on an 8-hour schedule.</li>
+              <li>Wrote <strong>5+ dbt models</strong> for staging, cleaning, aggregation and city- and time-based analytics.</li>
+              <li>Added <strong>5+ data-quality checks</strong> catching missing values, duplicates, invalid readings and timestamp drift.</li>
+            </ul>
+            <ul class="stack"><li>Airbyte</li><li>dbt</li><li>PostgreSQL</li><li>SQL</li><li>REST APIs</li></ul>
           </div>
-          <ul>
-            <li>Integrated OpenWeather API data for 15+ cities, capturing 20+ weather attributes (temperature, humidity, pressure, wind, conditions).</li>
-            <li>Designed an Airbyte → PostgreSQL ingestion pipeline refreshing every 8 hours to build a historical weather store.</li>
-            <li>Developed 5+ dbt SQL models for staging, cleaning, aggregation and city/time-based analytics over 100K+ observations.</li>
-            <li>Implemented 5+ data-quality checks for missing values, duplicates, invalid measurements and inconsistent timestamps.</li>
-          </ul>
-          <ul class="stack"><li>Airbyte</li><li>dbt</li><li>PostgreSQL</li><li>SQL</li></ul>
-        </li>
-      </ol>
+        </article>
+      </div>
 
       <h3 class="sub-title">Education</h3>
       <div class="edu">
@@ -396,14 +423,16 @@ me.ship()  <span class="c"># → production-ready AI</span><span class="cursor">
     <!-- CONTACT -->
     <section id="contact" class="section contact reveal">
       <h2 class="section-title"><span class="mono num">05.</span> Let's talk</h2>
-      <p class="lead">I'm open to AI / ML / Data Science roles and interesting collaborations. Drop me an email or message me on LinkedIn.</p>
-      <p class="mono email"><a href="mailto:ms22002200@gmail.com">ms22002200@gmail.com</a></p>
+      <p class="lead">I'm actively looking for a <strong>full-time role</strong> in AI, ML or Data Science, where I can ship production systems and keep growing with a strong team.</p>
       <div class="cta-row center">
-        <a class="btn" href="https://www.linkedin.com/in/mohammad-saif-4ba114201" target="_blank" rel="noopener">Message me on LinkedIn</a>
+        <a class="btn" href="mailto:ms22002200@gmail.com?subject=Opportunity%20for%20Mohammad%20Saif">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/mohammad-saif-4ba114201" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="/resume.pdf" target="_blank" rel="noopener">Download resume</a>
         <a class="btn btn-ghost" href="https://github.com/saif-siddiqui06" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn btn-ghost" href="mailto:ms22002200@gmail.com">Email me</a>
-        <a class="btn btn-ghost" href="/resume.pdf" target="_blank" rel="noopener">Resume</a>
       </div>
+      <p class="mono email"><a href="mailto:ms22002200@gmail.com">ms22002200@gmail.com</a></p>
+      <p class="freelance">Need an AI feature, RAG chatbot, data pipeline or Chrome extension built? I also take on
+        <a href="mailto:ms22002200@gmail.com?subject=Freelance%20project">select freelance projects →</a></p>
     </section>
   </main>
 
